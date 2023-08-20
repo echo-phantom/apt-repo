@@ -93,7 +93,7 @@ jobs:
 
       - name: Adding jammy util packages
         #uses: smeinecke/apt-repo-action@v2.1.4
-        uses: enter-dragon/apt-repo-action@4f22c4127c1137799befd2a9820695915db3d1f8
+        uses: enter-dragon/apt-repo-action@64e48222d79972fb0ac67997083838d6abd216ec
         with:
           github_token: ${{ secrets.PAT }}
           repo_supported_arch: |
@@ -111,7 +111,7 @@ jobs:
 
       - name: Adding lunar util packages
         #uses: smeinecke/apt-repo-action@v2.1.4
-        uses: enter-dragon/apt-repo-action@4f22c4127c1137799befd2a9820695915db3d1f8
+        uses: enter-dragon/apt-repo-action@64e48222d79972fb0ac67997083838d6abd216ec
 
         with:
           github_token: ${{ secrets.PAT }}
