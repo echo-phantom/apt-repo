@@ -11,8 +11,8 @@ mkdir -p eupnea-utils/usr/share/eupnea
 mkdir -p eupnea-utils/etc/systemd/system/
 
 # Clone postinstall + audio repo
-git clone --depth=1 https://github.com/eupnea-linux/eupnea-utils.git remote-eupnea-utils
-git clone --depth=1 https://github.com/eupnea-linux/audio-scripts.git
+git clone --depth=1 https://github.com/enter-dragon/eupnea-utils.git remote-eupnea-utils
+git clone --depth=1 https://github.com/enter-dragon/audio-scripts.git
 
 # Copy scripts into package
 install -Dm 755 remote-eupnea-utils/user-scripts/* eupnea-utils/usr/bin
