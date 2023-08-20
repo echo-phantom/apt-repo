@@ -92,7 +92,8 @@ jobs:
           file_pattern: 'control-files/utils-control cache/utils_sha-cache.txt'
 
       - name: Adding jammy util packages
-        uses: smeinecke/apt-repo-action@v2.1.4
+        #uses: smeinecke/apt-repo-action@v2.1.4
+        uses: enter-dragon/apt-repo-action@373ccea8785d1e97c99af9ac6696911eeff043c2
         with:
           github_token: ${{ secrets.PAT }}
           repo_supported_arch: |
@@ -109,7 +110,9 @@ jobs:
           repo_folder: "debian_ubuntu"
 
       - name: Adding lunar util packages
-        uses: smeinecke/apt-repo-action@v2.1.4
+        #uses: smeinecke/apt-repo-action@v2.1.4
+        uses: enter-dragon/apt-repo-action@373ccea8785d1e97c99af9ac6696911eeff043c2
+
         with:
           github_token: ${{ secrets.PAT }}
           repo_supported_arch: |
